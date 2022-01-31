@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+  }
+  .text {
+    margin-left: 10px;
+    color: #36395a;
+    font-weight: 600;
+  }
+  .btn {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    padding: 4px 6px;
+    color: #aaa;
+    outline: none;
+    border: 2px solid #aaa;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    transition: transform 0.15s;
+  }
+  .btn:hover,
+  .btn:focus {
+    cursor: pointer;
+    color: #36395a;
+    border: 2px solid #36395a;
+    transform: scale(1.02);
+  }

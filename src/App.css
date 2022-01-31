@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* position: relative; */
+}
+.spinner {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapp {
+  width: 500px;
+  margin-left: 500px;
+}
