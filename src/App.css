@@ -1,9 +1,9 @@
-.App {
+/* .App {
   display: flex;
   text-align: center;
   justify-content: center;
-  /* position: relative; */
-}
+  position: relative;
+} */
 .spinner {
   position: absolute;
   top: 100%;

@@ -1,8 +1,6 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import { contactsReducer } from './contacts';
 import { authReducer } from './authorization';
-
-// import filterReducer from './reducer.js';
 import {
   persistStore,
   persistReducer,
@@ -29,7 +27,6 @@ const middleware = [
     }, 
   }),
 ];
-
 
 export const store = configureStore({
   reducer: {

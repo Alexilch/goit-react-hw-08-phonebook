@@ -1,21 +1,20 @@
 import { NavLink } from 'react-router-dom';
-import ContactsIcon from '@mui/icons-material/Contacts';
 import s from './HomeView.module.css';
+import '../../images/hero2.jpg'
 
 function Home() {
   return (
-    <div>
-      <p className={s.text}>
-        <ContactsIcon fontSize="large" />
-        <br />
+    <div className={s.hero}>
+      <p className={s.title}>
+        Please,  
         <NavLink to="/login" className={s.link}>
-          Log in
+        log in
         </NavLink>{' '}
-        to open the phone book or <br />
+        to your phonebook or <br />
         <NavLink to="/register" className={s.link}>
-          register a new profile
+          register 
         </NavLink>{' '}
-        to create a new phone book
+        to create a new phonebook!
       </p>
     </div>
   );

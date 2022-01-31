@@ -11,10 +11,9 @@ import {
   fetchContactError,
 } from './contacts-actions';
 
-// GET @ /tasks
+// GET 
 const fetchContacts = () => async dispatch => {
   dispatch(fetchContactRequest());
-
   try {
     const { data } = await axios.get('/contacts');
 
@@ -23,23 +22,16 @@ const fetchContacts = () => async dispatch => {
     dispatch(fetchContactError(error.message));
   }
 };
-
-// POST @ /tasks
+//post
 const addContact = description => dispatch => {
-  // const contact = {
-  //   description,
-  //   completed: false,
-  // };
-
   dispatch(addContactRequest());
-
   axios
     .post('/contacts', description)
     .then(({ data }) => dispatch(addContactSuccess(data)))
     .catch(error => dispatch(addContactError(error.message)));
 };
 
-// DELETE @ /tasks/:id
+// DELETE 
 const deleteContact = contactId => dispatch => {
   dispatch(deleteContactRequest());
 
